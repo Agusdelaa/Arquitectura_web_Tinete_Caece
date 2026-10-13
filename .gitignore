@@ -1,0 +1,9 @@
+# Dependencias
+node_modules/
+
+# Servidor local Windows
+nginx/
+
+# Archivos de sistema / temporales
+.DS_Store
+Thumbs.db

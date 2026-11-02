@@ -3,93 +3,129 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="estilos.css">
+  <meta name="description" content="Currículum Vitae y perfil profesional de Agustín Mateo de la Puente. CS Developer, especialista en Ciberseguridad e IAM.">
+  <meta name="author" content="Agustín Mateo de la Puente">
   <title>Agustín Mateo de la Puente - Currículum Vitae</title>
+  <link rel="stylesheet" type="text/css" href="estilos.css">
 </head>
 <body>
+  <!-- Enlace de salto al contenido principal (WCAG 1.0 - Criterio 13.6 / Técnica G1) -->
+  <a href="#contenido-principal" class="salto-navegacion">Saltar al contenido principal</a>
+
   <div id="contenedor">
 
-  <!-- Encabezado Principal / Datos Personales -->
-  <header>
-    <h1>Agustín Mateo de la Puente</h1>
-    <p><strong>CS Developer | Ciberseguridad &amp; IAM</strong></p>
-    <p>
-      Buenos Aires, Argentina | 
-      Teléfono: <a href="tel:+5491134422525">+54 9 11 3442-2525</a> | 
-      Email: <a href="mailto:dagustin001@gmail.com">dagustin001@gmail.com</a> | 
-      LinkedIn: <a href="https://www.linkedin.com/in/agust%C3%ADn-mateo-de-la-puente-3ab529212/" target="_blank">Perfil Profesional</a>
-    </p>
-    <img src="assets/foto_agustin.png" alt="Foto de perfil de Agustín Mateo de la Puente" width="130">
-  </header>
+    <!-- Encabezado Principal / Datos Personales -->
+    <header role="banner">
+      <div class="header-datos">
+        <h1>Agustín Mateo de la Puente</h1>
+        <p class="subtitulo-profesional"><strong><span lang="en">CS Developer</span> | Ciberseguridad &amp; <abbr title="Identity and Access Management" lang="en">IAM</abbr></strong></p>
+        
+        <!-- Navegación de contacto y redes -->
+        <nav aria-label="Datos de contacto y perfiles" id="contacto">
+          <a href="#secciones-cv" class="salto-navegacion">Saltar enlaces de contacto</a>
+          <p class="datos-contacto">
+            Buenos Aires, Argentina | 
+            Teléfono: <a href="tel:+5491134422525" title="Llamar al teléfono +54 9 11 3442-2525">+54 9 11 3442-2525</a> | 
+            Email: <a href="mailto:dagustin001@gmail.com" title="Enviar correo electrónico a Agustín">dagustin001@gmail.com</a> | 
+            LinkedIn: <a href="https://www.linkedin.com/in/agust%C3%ADn-mateo-de-la-puente-3ab529212/" target="_blank" rel="noopener noreferrer" title="Perfil Profesional de Agustín Mateo de la Puente en LinkedIn (se abre en una ventana nueva)">Perfil Profesional en LinkedIn <span class="sr-only">(se abre en una ventana nueva)</span></a>
+          </p>
+        </nav>
+      </div>
 
-  <hr>
+      <img src="assets/foto_agustin.png" alt="Fotografía de perfil de Agustín Mateo de la Puente" width="130" height="130" class="foto-perfil">
+    </header>
 
-  <!-- Resumen Profesional -->
-  <section>
-    <h2>Resumen Profesional</h2>
-    <p>
-      Estudiante de la Licenciatura en Sistemas en la Universidad CAECE con experiencia en ciberseguridad, administración de accesos e identidades (IAM) y desarrollo de automatizaciones. Actualmente me desempeño como CS Developer en Mercado Libre, enfocado en la gestión y automatización de accesos y roles corporativos, desarrollo de bots para resolución de tickets y herramientas de seguridad. Cuento además con experiencia previa en arquitectura de sistemas bancarios (Bantotal / GeneXus).
-    </p>
-  </section>
+    <!-- Menú de navegación interna rápida por secciones del CV -->
+    <nav aria-label="Índice de secciones del Currículum" id="secciones-cv" class="nav-secciones">
+      <h2 class="sr-only">Secciones del documento</h2>
+      <a href="#contenido-principal" class="salto-navegacion">Saltar índice de secciones</a>
+      <ul class="lista-nav">
+        <li><a href="#resumen">Resumen Profesional</a></li>
+        <li><a href="#experiencia">Experiencia Laboral</a></li>
+        <li><a href="#educacion">Educación</a></li>
+        <li><a href="#aptitudes">Aptitudes &amp; Conocimientos</a></li>
+      </ul>
+    </nav>
 
-  <hr>
+    <!-- Contenido Principal -->
+    <main id="contenido-principal" role="main">
 
-  <!-- Experiencia Laboral -->
-  <section>
-    <h2>Experiencia Laboral</h2>
+      <!-- Resumen Profesional -->
+      <section id="resumen" class="seccion-cv">
+        <h2>Resumen Profesional</h2>
+        <p>
+          Estudiante de la Licenciatura en Sistemas en la Universidad CAECE con experiencia en ciberseguridad, administración de accesos e identidades (<abbr title="Identity and Access Management" lang="en">IAM</abbr>) y desarrollo de automatizaciones. Actualmente me desempeño como <span lang="en">CS Developer</span> en Mercado Libre, enfocado en la gestión y automatización de accesos y roles corporativos, desarrollo de <span lang="en">bots</span> para resolución de tickets y herramientas de seguridad. Cuento además con experiencia previa en arquitectura de sistemas bancarios (Bantotal / GeneXus).
+        </p>
+      </section>
 
-    <h3>CS Developer</h3>
-    <p><strong>Empresa:</strong> Mercado Libre (Julio 2026 - Presente) | Buenos Aires, Argentina</p>
-    <ul>
-      <li>Gestión y administración de accesos, permisos y roles de usuarios y equipos para diversas aplicaciones internas y corporativas.</li>
-      <li>Automatización en la asignación de aplicaciones, perfiles y roles para optimizar los procesos de los diferentes equipos de trabajo.</li>
-      <li>Desarrollo de herramientas y recursos de seguridad para auditar y verificar el correcto uso de herramientas y permisos asignados.</li>
-      <li>Desarrollo de bots e integraciones para la automatización y resolución ágil de tickets en la plataforma de soporte interno.</li>
-      <li>Soporte técnico y resolución de incidencias vinculadas a accesos, autenticación y permisos de usuarios.</li>
-    </ul>
+      <!-- Experiencia Laboral -->
+      <section id="experiencia" class="seccion-cv">
+        <h2>Experiencia Laboral</h2>
 
-    <h3>Arquitecto IT Jr – GeneXus &amp; Bantotal</h3>
-    <p><strong>Empresa:</strong> Accion Point (Febrero 2025 - Junio 2026) | Buenos Aires, Argentina</p>
-    <ul>
-      <li>Análisis técnico de requerimientos funcionales bancarios junto a entidades financieras.</li>
-      <li>Diseño e implementación de soluciones técnicas sobre el core bancario Bantotal utilizando GeneXus.</li>
-      <li>Definición de estructuras de datos relacionales, tablas auxiliares y procesos batch.</li>
-      <li>Diseño de integraciones con sistemas externos (SOAP/REST) y elaboración de documentación técnica.</li>
-    </ul>
-  </section>
+        <article class="item-experiencia">
+          <h3><span lang="en">CS Developer</span></h3>
+          <p class="item-meta"><strong>Empresa:</strong> Mercado Libre (Julio 2026 - Presente) | Buenos Aires, Argentina</p>
+          <ul>
+            <li>Gestión y administración de accesos, permisos y roles de usuarios y equipos para diversas aplicaciones internas y corporativas.</li>
+            <li>Automatización en la asignación de aplicaciones, perfiles y roles para optimizar los procesos de los diferentes equipos de trabajo.</li>
+            <li>Desarrollo de herramientas y recursos de seguridad para auditar y verificar el correcto uso de herramientas y permisos asignados.</li>
+            <li>Desarrollo de <span lang="en">bots</span> e integraciones para la automatización y resolución ágil de tickets en la plataforma de soporte interno.</li>
+            <li>Soporte técnico y resolución de incidencias vinculadas a accesos, autenticación y permisos de usuarios.</li>
+          </ul>
+        </article>
 
-  <hr>
+        <article class="item-experiencia">
+          <h3>Arquitecto <abbr title="Information Technology" lang="en">IT</abbr> Jr – GeneXus &amp; Bantotal</h3>
+          <p class="item-meta"><strong>Empresa:</strong> Accion Point (Febrero 2025 - Junio 2026) | Buenos Aires, Argentina</p>
+          <ul>
+            <li>Análisis técnico de requerimientos funcionales bancarios junto a entidades financieras.</li>
+            <li>Diseño e implementación de soluciones técnicas sobre el <span lang="en">core</span> bancario Bantotal utilizando GeneXus.</li>
+            <li>Definición de estructuras de datos relacionales, tablas auxiliares y procesos <span lang="en">batch</span>.</li>
+            <li>Diseño de integraciones con sistemas externos (<abbr title="Simple Object Access Protocol" lang="en">SOAP</abbr>/<abbr title="Representational State Transfer" lang="en">REST</abbr>) y elaboración de documentación técnica.</li>
+          </ul>
+        </article>
+      </section>
 
-  <!-- Educación y Formación Académica -->
-  <section>
-    <h2>Educación</h2>
+      <!-- Educación y Formación Académica -->
+      <section id="educacion" class="seccion-cv">
+        <h2>Educación</h2>
 
-    <h3>Licenciatura en Sistemas</h3>
-    <p><strong>Institución:</strong> Universidad CAECE (Febrero 2023 - Noviembre 2027 - En curso)</p>
-    <p>Formación académica en arquitectura de software, gestión de proyectos informáticos, seguridad de la información y estructuras de datos.</p>
+        <article class="item-educacion">
+          <h3>Licenciatura en Sistemas</h3>
+          <p class="item-meta"><strong>Institución:</strong> Universidad CAECE (Febrero 2023 - Noviembre 2027 - En curso)</p>
+          <p>Formación académica en arquitectura de software, gestión de proyectos informáticos, seguridad de la información y estructuras de datos.</p>
+        </article>
 
-    <h3>Analista en Sistemas</h3>
-    <p><strong>Institución:</strong> Universidad CAECE (Febrero 2023 - Noviembre 2025)</p>
-    <p>Diseño de bases de datos relacionales, programación estructurada y metodologías de desarrollo de software.</p>
+        <article class="item-educacion">
+          <h3>Analista en Sistemas</h3>
+          <p class="item-meta"><strong>Institución:</strong> Universidad CAECE (Febrero 2023 - Noviembre 2025)</p>
+          <p>Diseño de bases de datos relacionales, programación estructurada y metodologías de desarrollo de software.</p>
+        </article>
 
-    <h3>Educación Secundaria Técnica</h3>
-    <p><strong>Institución:</strong> Instituto 13 de Julio (ex E.N.E.T. Segba) (2017 - 2022)</p>
-  </section>
+        <article class="item-educacion">
+          <h3>Educación Secundaria Técnica</h3>
+          <p class="item-meta"><strong>Institución:</strong> Instituto 13 de Julio (ex <abbr title="Escuela Nacional de Educación Técnica">E.N.E.T.</abbr> Segba) (2017 - 2022)</p>
+        </article>
+      </section>
 
-  <hr>
+      <!-- Habilidades Técnicas y Aptitudes -->
+      <section id="aptitudes" class="seccion-cv">
+        <h2>Aptitudes &amp; Conocimientos Técnicos</h2>
+        <ul class="lista-aptitudes">
+          <li><strong><abbr title="Identity and Access Management" lang="en">IAM</abbr> &amp; Ciberseguridad:</strong> Gestión de identidades y accesos (<abbr title="Identity and Access Management" lang="en">IAM</abbr>), control de roles (<abbr title="Role-Based Access Control" lang="en">RBAC</abbr>), auditoría y cumplimiento de permisos, autenticación.</li>
+          <li><strong>Automatización &amp; <span lang="en">Bots</span>:</strong> Creación de <span lang="en">bots</span>, automatización de tickets y mesa de ayuda, <span lang="en">scripts</span> de integración.</li>
+          <li><strong>Sistemas Bancarios &amp; Software:</strong> GeneXus 18, <span lang="en">Core</span> Bantotal, Servicios <abbr title="Simple Object Access Protocol" lang="en">SOAP</abbr> / <abbr title="Representational State Transfer" lang="en">REST</abbr>, Procesos <span lang="en">Batch</span>, Modelado de Bases de Datos <abbr title="Structured Query Language" lang="en">SQL</abbr>.</li>
+          <li><strong>Herramientas &amp; Metodologías:</strong> Git, GitHub, Metodologías Ágiles (<span lang="en">Scrum</span>), soporte técnico especializado.</li>
+          <li><strong>Idiomas:</strong> Español (Nativo), Inglés (Técnico / Intermedio).</li>
+        </ul>
+      </section>
+    </main>
 
-  <!-- Habilidades Técnicas y Aptitudes -->
-  <section>
-    <h2>Aptitudes &amp; Conocimientos Técnicos</h2>
-    <ul>
-      <li><strong>IAM &amp; Ciberseguridad:</strong> Gestión de identidades y accesos (IAM), control de roles (RBAC), auditoría y cumplimiento de permisos, autenticación.</li>
-      <li><strong>Automatización &amp; Bots:</strong> Creación de bots, automatización de tickets y mesa de ayuda, scripts de integración.</li>
-      <li><strong>Sistemas Bancarios &amp; Software:</strong> GeneXus 18, Core Bantotal, Servicios SOAP / REST, Procesos Batch, Modelado de Bases de Datos SQL.</li>
-      <li><strong>Herramientas &amp; Metodologías:</strong> Git, GitHub, Metodologías Ágiles (Scrum), soporte técnico especializado.</li>
-      <li><strong>Idiomas:</strong> Español (Nativo), Inglés (Técnico / Intermedio).</li>
-    </ul>
-  </section>
+    <!-- Pie de página con información de conformidad y accesibilidad -->
+    <footer role="contentinfo">
+      <p>Sitio web adaptado bajo las pautas de accesibilidad <abbr title="Web Content Accessibility Guidelines" lang="en">WCAG</abbr> 1.0 (Nivel de conformidad AA).</p>
+      <p>&copy; 2026 Agustín Mateo de la Puente. Todos los derechos reservados.</p>
+    </footer>
   </div>
-
 </body>
 </html>
